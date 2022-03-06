@@ -1,0 +1,18 @@
+pluginManagement {
+  repositories {
+    gradlePluginPortal()
+    google()
+    mavenCentral()
+  }
+}
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+  repositories {
+    google()
+    mavenLocal()
+    maven {url "https://nexus.tangem-tech.com/repository/maven-releases/"}
+    mavenCentral()
+  }
+}
+rootProject.name = "Demo-BLS"
+include ':app'
